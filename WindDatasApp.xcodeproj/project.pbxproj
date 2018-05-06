@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		520B566D2096786C009A2BD4 /* Processes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520B566C2096786C009A2BD4 /* Processes.swift */; };
+		52673903209643D9005C2F02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52673902209643D9005C2F02 /* AppDelegate.swift */; };
+		52673905209643D9005C2F02 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52673904209643D9005C2F02 /* MainVC.swift */; };
+		52673908209643D9005C2F02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52673906209643D9005C2F02 /* Main.storyboard */; };
+		5267390A209643DA005C2F02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52673909209643DA005C2F02 /* Assets.xcassets */; };
+		5267390D209643DA005C2F02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5267390B209643DA005C2F02 /* LaunchScreen.storyboard */; };
+		5267391520964B09005C2F02 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5267391420964B09005C2F02 /* BaseView.swift */; };
+		5267391720964BA7005C2F02 /* CustomPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5267391620964BA7005C2F02 /* CustomPickerView.xib */; };
+		5267391920964DD2005C2F02 /* CustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5267391820964DD2005C2F02 /* CustomPickerView.swift */; };
+		5267391B20966A99005C2F02 /* WindData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5267391A20966A99005C2F02 /* WindData.swift */; };
+		5267391D20966AC8005C2F02 /* datas.json in Resources */ = {isa = PBXBuildFile; fileRef = 5267391C20966AC8005C2F02 /* datas.json */; };
+		52FB138C209E521900E4D97F /* ChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB138B209E521900E4D97F /* ChartVC.swift */; };
+		BF8DF44E09533E28A5677EDB /* Pods_WindDatasApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6896E01EE04E1FBAACD4290 /* Pods_WindDatasApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		520B566C2096786C009A2BD4 /* Processes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Processes.swift; sourceTree = "<group>"; };
+		526738FF209643D9005C2F02 /* WindDatasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WindDatasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52673902209643D9005C2F02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52673904209643D9005C2F02 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		52673907209643D9005C2F02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52673909209643DA005C2F02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5267390C209643DA005C2F02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5267390E209643DA005C2F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5267391420964B09005C2F02 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		5267391620964BA7005C2F02 /* CustomPickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomPickerView.xib; sourceTree = "<group>"; };
+		5267391820964DD2005C2F02 /* CustomPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerView.swift; sourceTree = "<group>"; };
+		5267391A20966A99005C2F02 /* WindData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindData.swift; sourceTree = "<group>"; };
+		5267391C20966AC8005C2F02 /* datas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = datas.json; sourceTree = "<group>"; };
+		52FB138B209E521900E4D97F /* ChartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartVC.swift; sourceTree = "<group>"; };
+		9AFFB606EC4903D7379E027E /* Pods-WindDatasApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WindDatasApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WindDatasApp/Pods-WindDatasApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A6896E01EE04E1FBAACD4290 /* Pods_WindDatasApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WindDatasApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB57750FF444B269F96C1942 /* Pods-WindDatasApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WindDatasApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WindDatasApp/Pods-WindDatasApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		526738FC209643D9005C2F02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8DF44E09533E28A5677EDB /* Pods_WindDatasApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B7125C20C9D72BDDE20955A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6896E01EE04E1FBAACD4290 /* Pods_WindDatasApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		526738F6209643D9005C2F02 = {
+			isa = PBXGroup;
+			children = (
+				52673901209643D9005C2F02 /* WindDatasApp */,
+				52673900209643D9005C2F02 /* Products */,
+				FCA9F59613C9919F3DDCB22A /* Pods */,
+				3B7125C20C9D72BDDE20955A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		52673900209643D9005C2F02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				526738FF209643D9005C2F02 /* WindDatasApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52673901209643D9005C2F02 /* WindDatasApp */ = {
+			isa = PBXGroup;
+			children = (
+				52673902209643D9005C2F02 /* AppDelegate.swift */,
+				52673904209643D9005C2F02 /* MainVC.swift */,
+				52673906209643D9005C2F02 /* Main.storyboard */,
+				52673909209643DA005C2F02 /* Assets.xcassets */,
+				5267390B209643DA005C2F02 /* LaunchScreen.storyboard */,
+				5267390E209643DA005C2F02 /* Info.plist */,
+				5267391420964B09005C2F02 /* BaseView.swift */,
+				5267391620964BA7005C2F02 /* CustomPickerView.xib */,
+				5267391820964DD2005C2F02 /* CustomPickerView.swift */,
+				5267391A20966A99005C2F02 /* WindData.swift */,
+				5267391C20966AC8005C2F02 /* datas.json */,
+				520B566C2096786C009A2BD4 /* Processes.swift */,
+				52FB138B209E521900E4D97F /* ChartVC.swift */,
+			);
+			path = WindDatasApp;
+			sourceTree = "<group>";
+		};
+		FCA9F59613C9919F3DDCB22A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AFFB606EC4903D7379E027E /* Pods-WindDatasApp.debug.xcconfig */,
+				FB57750FF444B269F96C1942 /* Pods-WindDatasApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		526738FE209643D9005C2F02 /* WindDatasApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52673911209643DA005C2F02 /* Build configuration list for PBXNativeTarget "WindDatasApp" */;
+			buildPhases = (
+				8ABA4A0515DB8FF386F22C3C /* [CP] Check Pods Manifest.lock */,
+				526738FB209643D9005C2F02 /* Sources */,
+				526738FC209643D9005C2F02 /* Frameworks */,
+				526738FD209643D9005C2F02 /* Resources */,
+				2428654856B318A0128505CC /* [CP] Embed Pods Frameworks */,
+				FA2FA19D3CB75F4ACB7DD519 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WindDatasApp;
+			productName = WindDatasApp;
+			productReference = 526738FF209643D9005C2F02 /* WindDatasApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		526738F7209643D9005C2F02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Cemal Bayrı";
+				TargetAttributes = {
+					526738FE209643D9005C2F02 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 526738FA209643D9005C2F02 /* Build configuration list for PBXProject "WindDatasApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 526738F6209643D9005C2F02;
+			productRefGroup = 52673900209643D9005C2F02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				526738FE209643D9005C2F02 /* WindDatasApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		526738FD209643D9005C2F02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5267390D209643DA005C2F02 /* LaunchScreen.storyboard in Resources */,
+				5267391720964BA7005C2F02 /* CustomPickerView.xib in Resources */,
+				5267390A209643DA005C2F02 /* Assets.xcassets in Resources */,
+				5267391D20966AC8005C2F02 /* datas.json in Resources */,
+				52673908209643D9005C2F02 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2428654856B318A0128505CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WindDatasApp/Pods-WindDatasApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WindDatasApp/Pods-WindDatasApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8ABA4A0515DB8FF386F22C3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WindDatasApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA2FA19D3CB75F4ACB7DD519 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WindDatasApp/Pods-WindDatasApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		526738FB209643D9005C2F02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5267391520964B09005C2F02 /* BaseView.swift in Sources */,
+				5267391B20966A99005C2F02 /* WindData.swift in Sources */,
+				5267391920964DD2005C2F02 /* CustomPickerView.swift in Sources */,
+				52FB138C209E521900E4D97F /* ChartVC.swift in Sources */,
+				52673905209643D9005C2F02 /* MainVC.swift in Sources */,
+				52673903209643D9005C2F02 /* AppDelegate.swift in Sources */,
+				520B566D2096786C009A2BD4 /* Processes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		52673906209643D9005C2F02 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52673907209643D9005C2F02 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5267390B209643DA005C2F02 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5267390C209643DA005C2F02 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5267390F209643DA005C2F02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52673910209643DA005C2F02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52673912209643DA005C2F02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AFFB606EC4903D7379E027E /* Pods-WindDatasApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TCFDLZ395L;
+				INFOPLIST_FILE = WindDatasApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cemal.WindDatasApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52673913209643DA005C2F02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB57750FF444B269F96C1942 /* Pods-WindDatasApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TCFDLZ395L;
+				INFOPLIST_FILE = WindDatasApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cemal.WindDatasApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		526738FA209643D9005C2F02 /* Build configuration list for PBXProject "WindDatasApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5267390F209643DA005C2F02 /* Debug */,
+				52673910209643DA005C2F02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52673911209643DA005C2F02 /* Build configuration list for PBXNativeTarget "WindDatasApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52673912209643DA005C2F02 /* Debug */,
+				52673913209643DA005C2F02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 526738F7209643D9005C2F02 /* Project object */;
+}

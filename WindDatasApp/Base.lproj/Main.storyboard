@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3rY-gu-GkL">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="WindDatasApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICf-QP-uxV">
+                                <rect key="frame" x="35" y="118" width="305" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="thz-SW-XlJ"/>
+                                </constraints>
+                                <state key="normal" title="Gün"/>
+                                <connections>
+                                    <action selector="btnDayAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JUa-8Q-0B6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="li4-yU-FKb">
+                                <rect key="frame" x="35" y="186" width="305" height="60"/>
+                                <state key="normal" title="Ay"/>
+                                <connections>
+                                    <action selector="btnMonethAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jog-eZ-sjp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLd-wJ-x8z">
+                                <rect key="frame" x="35" y="254" width="305" height="60"/>
+                                <state key="normal" title="Yıl"/>
+                                <connections>
+                                    <action selector="btnYearAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Je2-PK-5iB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cdx-Jg-VdJ">
+                                <rect key="frame" x="35" y="322" width="305" height="60"/>
+                                <state key="normal" title="İşlem"/>
+                                <connections>
+                                    <action selector="btnProcessAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hB2-Jh-M3x"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I3M-rt-XX8">
+                                <rect key="frame" x="35" y="468" width="305" height="94"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TVh-bV-Jz6" customClass="CustomPickerView" customModule="WindDatasApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="667" width="375" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="ndN-20-RkR"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DM-Qi-KL0">
+                                <rect key="frame" x="35" y="384" width="305" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="lM3-0s-FPG"/>
+                                </constraints>
+                                <state key="normal" title="Sıfırla"/>
+                                <connections>
+                                    <action selector="btnResetAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cLj-ZJ-J7u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Oc-Gb-6Lp">
+                                <rect key="frame" x="35" y="587" width="305" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="J9i-xD-buS"/>
+                                </constraints>
+                                <state key="normal" title="GRAFİK"/>
+                                <connections>
+                                    <action selector="btnGraphicAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0tH-lk-5xU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TVh-bV-Jz6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0M3-Tc-Zmm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ICf-QP-uxV" secondAttribute="trailing" constant="35" id="1kX-mq-5Et"/>
+                            <constraint firstItem="Cdx-Jg-VdJ" firstAttribute="top" secondItem="nLd-wJ-x8z" secondAttribute="bottom" constant="8" id="1pu-CJ-MZ3"/>
+                            <constraint firstItem="Cdx-Jg-VdJ" firstAttribute="height" secondItem="nLd-wJ-x8z" secondAttribute="height" id="FOb-wm-a8D"/>
+                            <constraint firstItem="I3M-rt-XX8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="FeG-Fa-Kie"/>
+                            <constraint firstItem="I3M-rt-XX8" firstAttribute="top" secondItem="4DM-Qi-KL0" secondAttribute="bottom" constant="24" id="Gc2-cy-9hg"/>
+                            <constraint firstItem="TVh-bV-Jz6" firstAttribute="top" secondItem="2Oc-Gb-6Lp" secondAttribute="bottom" constant="20" id="KzW-un-s35"/>
+                            <constraint firstItem="2Oc-Gb-6Lp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="L7Q-QF-SsX"/>
+                            <constraint firstItem="2Oc-Gb-6Lp" firstAttribute="top" secondItem="I3M-rt-XX8" secondAttribute="bottom" constant="25" id="Lpn-fd-xyn"/>
+                            <constraint firstItem="4DM-Qi-KL0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="MLs-va-2mw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I3M-rt-XX8" secondAttribute="trailing" constant="35" id="NGa-4K-eS2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cdx-Jg-VdJ" secondAttribute="trailing" constant="35" id="OcW-1G-hLp"/>
+                            <constraint firstItem="TVh-bV-Jz6" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="200" id="Odr-zA-Nab"/>
+                            <constraint firstItem="4DM-Qi-KL0" firstAttribute="top" secondItem="Cdx-Jg-VdJ" secondAttribute="bottom" constant="2" id="P3O-qB-Ccd"/>
+                            <constraint firstItem="nLd-wJ-x8z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="R3L-4u-yH0"/>
+                            <constraint firstItem="li4-yU-FKb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="RTp-A7-sG6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4DM-Qi-KL0" secondAttribute="trailing" constant="35" id="UW0-Ds-U2E"/>
+                            <constraint firstItem="li4-yU-FKb" firstAttribute="height" secondItem="ICf-QP-uxV" secondAttribute="height" id="Y4M-tv-fOk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Oc-Gb-6Lp" secondAttribute="trailing" constant="35" id="YFo-bb-jSt"/>
+                            <constraint firstItem="nLd-wJ-x8z" firstAttribute="top" secondItem="li4-yU-FKb" secondAttribute="bottom" constant="8" id="Zrf-I5-qKm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nLd-wJ-x8z" secondAttribute="trailing" constant="35" id="amy-U1-QJP"/>
+                            <constraint firstItem="ICf-QP-uxV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="iKS-In-GhQ"/>
+                            <constraint firstItem="Cdx-Jg-VdJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="iXJ-H9-otq"/>
+                            <constraint firstItem="li4-yU-FKb" firstAttribute="top" secondItem="ICf-QP-uxV" secondAttribute="bottom" constant="8" id="kRf-Vo-bmQ"/>
+                            <constraint firstItem="ICf-QP-uxV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="lVv-oo-fPH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="li4-yU-FKb" secondAttribute="trailing" constant="35" id="uUY-hv-wzr"/>
+                            <constraint firstItem="nLd-wJ-x8z" firstAttribute="height" secondItem="li4-yU-FKb" secondAttribute="height" id="xSd-Ya-Ypa"/>
+                            <constraint firstItem="TVh-bV-Jz6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="z7g-Xc-qzg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="afK-Th-bzS"/>
+                    <connections>
+                        <outlet property="bottomConst" destination="Odr-zA-Nab" id="P7w-us-6jW"/>
+                        <outlet property="btnDay" destination="ICf-QP-uxV" id="2Ms-bY-WFr"/>
+                        <outlet property="btnMonth" destination="li4-yU-FKb" id="mar-ej-33P"/>
+                        <outlet property="btnProcess" destination="Cdx-Jg-VdJ" id="XJQ-wd-bnG"/>
+                        <outlet property="btnReset" destination="4DM-Qi-KL0" id="79S-Vx-Cis"/>
+                        <outlet property="btnYear" destination="nLd-wJ-x8z" id="0c7-0v-VvV"/>
+                        <outlet property="pickerView" destination="TVh-bV-Jz6" id="wFQ-II-56w"/>
+                        <outlet property="txtData" destination="I3M-rt-XX8" id="oOm-9E-pYC"/>
+                        <segue destination="zA2-o2-9vx" kind="show" identifier="seguegraph" id="c62-j6-zPo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="916" y="133.5832083958021"/>
+        </scene>
+        <!--ChartVC-->
+        <scene sceneID="KAV-9u-vkE">
+            <objects>
+                <viewController id="zA2-o2-9vx" customClass="ChartVC" customModule="WindDatasApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Iia-cq-95g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4St-kJ-ZKD" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="16" y="80" width="343" height="252"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="252" id="pES-CC-fNJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W1N-9D-SEf" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="16" y="380" width="343" height="252"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="252" id="i5A-IP-Q4Y"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xno-ia-gTY" firstAttribute="trailing" secondItem="W1N-9D-SEf" secondAttribute="trailing" constant="16" id="1D7-Qf-ifV"/>
+                            <constraint firstItem="4St-kJ-ZKD" firstAttribute="top" secondItem="Xno-ia-gTY" secondAttribute="top" constant="16" id="E2p-d3-Wvv"/>
+                            <constraint firstItem="Xno-ia-gTY" firstAttribute="trailing" secondItem="4St-kJ-ZKD" secondAttribute="trailing" constant="16" id="Ts8-yk-Ka6"/>
+                            <constraint firstItem="W1N-9D-SEf" firstAttribute="leading" secondItem="Xno-ia-gTY" secondAttribute="leading" constant="16" id="gwr-aW-zi4"/>
+                            <constraint firstItem="4St-kJ-ZKD" firstAttribute="leading" secondItem="Xno-ia-gTY" secondAttribute="leading" constant="16" id="slH-XN-AEM"/>
+                            <constraint firstItem="W1N-9D-SEf" firstAttribute="top" secondItem="4St-kJ-ZKD" secondAttribute="bottom" constant="48" id="wZK-FL-Cgg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xno-ia-gTY"/>
+                    </view>
+                    <connections>
+                        <outlet property="barChartView" destination="4St-kJ-ZKD" id="IBS-La-l0N"/>
+                        <outlet property="lineChartView" destination="W1N-9D-SEf" id="JIG-U0-hha"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HGy-vt-JyC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1722.4000000000001" y="134.48275862068968"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="krr-dx-pAf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3rY-gu-GkL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7J1-Zv-GcI">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Pof-lf-sc5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="omX-Gt-RCc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.199999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
