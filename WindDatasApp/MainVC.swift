@@ -19,10 +19,14 @@ class MainVC: UIViewController {
     @IBOutlet weak var txtData: UITextView!
     @IBOutlet weak var btnReset: UIButton!
     
+    
+    
     @IBOutlet weak var bottomConst: NSLayoutConstraint!
     var dic : [String: Any] = [:]
     var jsonArr: [JSON]?
     var filt = [JSON]()
+    
+    var speedsForMatris = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,11 +46,29 @@ class MainVC: UIViewController {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                // dic = JSON(data)["array"].array
                 jsonArr = JSON(data)["array"].array
+                
+                fillEmptySpeeds()
+              
             } catch {
                 // handle error
             }
         }
     }
+    
+    private func fillEmptySpeeds() {
+        if let arr = jsonArr {
+            arr.map{$0["windSpeed"].stringValue}.forEach { (item) in
+                speedsForMatris.append(item)
+            }
+        }
+        
+        for i in 0..<speedsForMatris.count {
+            if speedsForMatris[i] == "" {
+                speedsForMatris[i] = "2.2"
+            }
+        }
+    }
+    
     
     @IBAction func btnDayAction(_ sender: Any) {
         pickerView.setPickerFor(pickerView.datePicker)
@@ -83,27 +105,32 @@ class MainVC: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let dest = segue.destination as! ChartVC
-        let arr = filt.map{$0["day"].stringValue}
-        var hoursArr = [String]()
-        arr.forEach { (item) in
-            hoursArr.append(item.components(separatedBy: " ")[1])
-        }
         
-        dest.hours = hoursArr
-        
-        var speedArr = [Double]()
-        for item in filt {
-            if item["windSpeed"].stringValue != "" {
-                let it = item["windSpeed"].stringValue
-                speedArr.append(Double(it)!)
-            } else {
-                speedArr.append(0.0)
+        if segue.identifier == "seguegraph" {
+            let dest = segue.destination as! ChartVC
+            let arr = filt.map{$0["day"].stringValue}
+            var hoursArr = [String]()
+            arr.forEach { (item) in
+                hoursArr.append(item.components(separatedBy: " ")[1])
             }
+            
+            dest.hours = hoursArr
+            
+            var speedArr = [Double]()
+            for item in filt {
+                if item["windSpeed"].stringValue != "" {
+                    let it = item["windSpeed"].stringValue
+                    speedArr.append(Double(it)!)
+                } else {
+                    speedArr.append(0.0)
+                }
+            }
+            dest.windSpeeds = speedArr
+        } else {
+            let dest = segue.destination as! MatrisVC
+            dest.speeds = self.speedsForMatris
         }
-        dest.windSpeeds = speedArr
-
-        
+    
     }
     
     
@@ -146,7 +173,6 @@ class MainVC: UIViewController {
                 }
             }
         } else {
-            
             var newFilt = [JSON]()
             let strArr = filt.map{$0["day"].stringValue}
             for item in strArr {
@@ -295,3 +321,9 @@ extension MainVC: animatePickerProtocol {
     }
 }
 
+extension Double {
+    func roundTo(places:Int) -> Double {
+        let divisor = pow(10.0, Double(places))
+        return (self * divisor).rounded() / divisor
+    }
+}

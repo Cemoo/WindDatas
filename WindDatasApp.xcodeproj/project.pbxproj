@@ -18,6 +18,7 @@
 		5267391920964DD2005C2F02 /* CustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5267391820964DD2005C2F02 /* CustomPickerView.swift */; };
 		5267391B20966A99005C2F02 /* WindData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5267391A20966A99005C2F02 /* WindData.swift */; };
 		5267391D20966AC8005C2F02 /* datas.json in Resources */ = {isa = PBXBuildFile; fileRef = 5267391C20966AC8005C2F02 /* datas.json */; };
+		52BFD52620A8BB24008510B0 /* MatrisVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFD52520A8BB24008510B0 /* MatrisVC.swift */; };
 		52FB138C209E521900E4D97F /* ChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB138B209E521900E4D97F /* ChartVC.swift */; };
 		BF8DF44E09533E28A5677EDB /* Pods_WindDatasApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6896E01EE04E1FBAACD4290 /* Pods_WindDatasApp.framework */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,7 @@
 		5267391820964DD2005C2F02 /* CustomPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerView.swift; sourceTree = "<group>"; };
 		5267391A20966A99005C2F02 /* WindData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindData.swift; sourceTree = "<group>"; };
 		5267391C20966AC8005C2F02 /* datas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = datas.json; sourceTree = "<group>"; };
+		52BFD52520A8BB24008510B0 /* MatrisVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrisVC.swift; sourceTree = "<group>"; };
 		52FB138B209E521900E4D97F /* ChartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartVC.swift; sourceTree = "<group>"; };
 		9AFFB606EC4903D7379E027E /* Pods-WindDatasApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WindDatasApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WindDatasApp/Pods-WindDatasApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A6896E01EE04E1FBAACD4290 /* Pods_WindDatasApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WindDatasApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +98,7 @@
 				5267391C20966AC8005C2F02 /* datas.json */,
 				520B566C2096786C009A2BD4 /* Processes.swift */,
 				52FB138B209E521900E4D97F /* ChartVC.swift */,
+				52BFD52520A8BB24008510B0 /* MatrisVC.swift */,
 			);
 			path = WindDatasApp;
 			sourceTree = "<group>";
@@ -189,11 +192,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WindDatasApp/Pods-WindDatasApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/SpreadsheetView/SpreadsheetView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SpreadsheetView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +248,7 @@
 			files = (
 				5267391520964B09005C2F02 /* BaseView.swift in Sources */,
 				5267391B20966A99005C2F02 /* WindData.swift in Sources */,
+				52BFD52620A8BB24008510B0 /* MatrisVC.swift in Sources */,
 				5267391920964DD2005C2F02 /* CustomPickerView.swift in Sources */,
 				52FB138C209E521900E4D97F /* ChartVC.swift in Sources */,
 				52673905209643D9005C2F02 /* MainVC.swift in Sources */,

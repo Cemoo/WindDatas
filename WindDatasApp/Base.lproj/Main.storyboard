@@ -116,7 +116,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="afK-Th-bzS"/>
+                    <navigationItem key="navigationItem" id="afK-Th-bzS">
+                        <barButtonItem key="rightBarButtonItem" title="Matris" id="lhL-0A-wYR">
+                            <connections>
+                                <segue destination="Thq-sw-80T" kind="show" identifier="seguematris" id="xxB-mp-3F4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="bottomConst" destination="Odr-zA-Nab" id="P7w-us-6jW"/>
                         <outlet property="btnDay" destination="ICf-QP-uxV" id="2Ms-bY-WFr"/>
@@ -132,6 +138,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="916" y="133.5832083958021"/>
+        </scene>
+        <!--MatrisVC-->
+        <scene sceneID="USS-qW-I3S">
+            <objects>
+                <viewController id="Thq-sw-80T" customClass="MatrisVC" customModule="WindDatasApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4xP-3S-wUx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GR7-r2-LjN" customClass="SpreadsheetView" customModule="SpreadsheetView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="553"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uru-g0-UoF" firstAttribute="bottom" secondItem="GR7-r2-LjN" secondAttribute="bottom" constant="50" id="c7F-qa-LNn"/>
+                            <constraint firstItem="GR7-r2-LjN" firstAttribute="top" secondItem="uru-g0-UoF" secondAttribute="top" id="fSS-9p-j9W"/>
+                            <constraint firstItem="GR7-r2-LjN" firstAttribute="leading" secondItem="uru-g0-UoF" secondAttribute="leading" id="or1-du-IFb"/>
+                            <constraint firstItem="GR7-r2-LjN" firstAttribute="trailing" secondItem="uru-g0-UoF" secondAttribute="trailing" id="uQB-fw-pQ2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uru-g0-UoF"/>
+                    </view>
+                    <connections>
+                        <outlet property="matriceView" destination="GR7-r2-LjN" id="DsI-Ei-An9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qPX-PB-xCU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="919.20000000000005" y="892.80359820089961"/>
         </scene>
         <!--ChartVC-->
         <scene sceneID="KAV-9u-vkE">

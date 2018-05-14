@@ -2,16 +2,19 @@ PODS:
   - Charts (3.0.5):
     - Charts/Core (= 3.0.5)
   - Charts/Core (3.0.5)
+  - SpreadsheetView (0.8.4)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
   - Charts
+  - SpreadsheetView
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Charts: 45cdc985b764c838b35ee47eb1365d15735f6d1a
+  SpreadsheetView: 17c55b6dc82099993cc2ceb818248d19f3220998
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: f4a9caf35361a5cb97fdf6a9b4eadcea973e56a0
+PODFILE CHECKSUM: 0482c2cfe9c2a11fd31c8332e0baf21b383d173a
 
 COCOAPODS: 1.4.0

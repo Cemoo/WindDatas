@@ -6,6 +6,7 @@ target 'WindDatasApp' do
   use_frameworks!
 pod 'SwiftyJSON'
 pod 'Charts'
+pod 'SpreadsheetView'
   # Pods for WindDatasApp
 
 end
